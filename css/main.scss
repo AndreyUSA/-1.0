@@ -1,0 +1,123 @@
+$primary-color: #46D7B3;
+$secondary-color: #000000;
+$third_color: #4f4d4d;
+html{
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: #FAFAFA;
+}
+
+*{
+    color: $third_color;
+    font-size: 14px;
+}
+
+h1{
+    color: $primary-color;
+    margin-top: 0em;
+    font-size: 24px;
+}
+h2{
+    color: $primary-color;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    font-size: 18px;
+}
+h3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+a{
+    color: $primary-color;
+}
+
+.contact{
+    display: flex;
+    margin-top: 0.5em;
+    &__type{
+        min-width: 150px;
+        
+    }
+}
+
+.inf{
+    display: flex;
+    margin-bottom: 1em;
+
+   &__photo{
+       min-width: 240px;
+   }
+   img{
+       width: 220px;
+       border: 4px double $primary-color; 
+   }
+  
+} 
+.discription__title{
+    margin-top: 2em;
+}
+.description{
+    margin-bottom: 2em;
+}
+
+.experience{
+    display: flex;
+    margin-bottom: 1em;
+    &__date{
+        min-width: 180px;       
+    }
+    &__name{
+        font-weight: bold;
+        margin-bottom: 0.2em;
+        color: $secondary-color;
+    }
+   }
+li{
+    margin-top: 0.2em;
+}
+
+.Language{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.skills{
+    margin-bottom: 1em;
+}
+
+.cv{
+    max-width: 900px;
+    margin:auto;
+}
+
+section{
+    margin-bottom: 3em;
+}
+.social{
+   display: block;
+   width: 200px;
+   margin: auto;
+   &__img{
+       
+        float: left;
+    }
+    img{
+        width: 45px;
+        transition: 0.5s;
+        margin-left: 15px;  
+    }  
+    img:hover{
+        width: 55px;
+        transform: img(1.2);
+    }
+}
+
+.empty{
+    height: 55px;
+}
+@media (max-width:700px){
+
+    .experience{
+        display: block;
+    }
+}
